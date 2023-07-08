@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+   background-color:#0d192b ; 
+   font-family: 'Outfit', sans-serif;
+   color: hsl(215, 51%, 70%);
+   font-weight: 300;
+   line-height: 1.6;
+}
+
+.card {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card {
+   background-color: hsl(216, 50%, 16%);
+   width: min(87.5%, 22rem);  
+   margin: 9.5rem auto;  
+   border-radius: 15px;  
+   padding: 1.5rem 1.6rem 2rem;  
+   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.image-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+}
+
+.image {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.eye {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;  
+    right: 0;  
+    height: 100%;  
+    width: 100%;  
+    opacity: 0;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 10px;
+}
+
+.view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;
+}
+
+.image-container:hover .eye {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.image-container:hover .eye + .view {
+  display: block;
+}
+
+.title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+    margin: 1.4rem 0 0.75rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.details {
+   display: flex;
+   justify-content: space-between;
+   margin: 1rem 0 1.4rem;
+   
+}
+
+.eth {
+    color: cyan;
+    font-weight: 600;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+    margin-right: 0.5rem;
+}
+
+.creator-info {
+  display: flex;
+  border-top: 1px solid hsl(215, 32%, 27%);
+  padding-top: 1rem;
+  align-items: center;
+}
+
+.avatar {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 2rem;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.creator-text {
+  font-weight: 300;
+}
+
+.creator-name {
+  color: white
+}
+
+.title:hover,
+.creator-name:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 60px;
+  text-align: center;
+}
+
+.attribution a {
+  color: white
+}
+
+.attribution a:hover {
+  color:gold
+}
+
+.remy{
+    text-decoration: wavy;
+    font-family: cursive;
+}
+
